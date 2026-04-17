@@ -64,13 +64,12 @@ export function DeveloperExperience() {
             <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
             <span className="text-[11px] font-semibold uppercase tracking-[0.12em] text-accent">Developer experience</span>
           </div>
-          <span className="text-[11px] font-medium text-gray-600 uppercase tracking-wider">06 / 08</span>
         </div>
 
         <h2 className="text-[40px] md:text-[48px] font-bold text-white leading-[1.1] tracking-tight mb-4">
           Build on MeetSync.
         </h2>
-        <p className="text-[17px] text-gray-400 leading-relaxed max-w-[520px] mb-14">
+        <p className="text-[17px] text-body-light leading-relaxed max-w-[520px] mb-14">
           Three lines of code. That&apos;s all it takes to pipe every meeting summary into your product.
         </p>
 
@@ -86,7 +85,7 @@ export function DeveloperExperience() {
                   className={`px-5 py-3 text-[13px] font-medium transition-all duration-200 relative ${
                     activeTab === i
                       ? "text-accent bg-accent/5"
-                      : "text-gray-500 hover:text-gray-300"
+                      : "text-body-subtle hover:text-white"
                   }`}
                 >
                   {tab.lang}
@@ -98,7 +97,7 @@ export function DeveloperExperience() {
             </div>
             {/* Code with transition */}
             <div className="relative">
-              <pre key={activeTab} className="p-6 text-[13px] text-gray-300 leading-relaxed font-mono overflow-x-auto animate-fade-in">
+              <pre key={activeTab} className="p-6 text-[13px] text-body-light leading-relaxed font-mono overflow-x-auto animate-fade-in">
                 <code>{tabs[activeTab].code}</code>
               </pre>
             </div>
@@ -107,17 +106,17 @@ export function DeveloperExperience() {
           {/* Integration logos */}
           <div className="flex flex-col justify-center gap-8">
             <div>
-              <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-gray-500 mb-6">Integrates with</p>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-body-subtle mb-6">Integrates with</p>
               <div ref={gridRef as React.RefObject<HTMLDivElement>} className="grid grid-cols-3 gap-4 stagger-children">
                 {["Slack", "Linear", "Notion", "Google Cal", "Outlook", "Jira"].map((name) => (
                   <div key={name} className="bg-[#111122] border border-gray-800 rounded-xl p-4 flex items-center justify-center hover:border-accent/40 hover:bg-accent/5 hover:scale-105 transition-all duration-200 cursor-default">
-                    <span className="text-[13px] font-semibold text-gray-400">{name}</span>
+                    <span className="text-[13px] font-semibold text-body-light">{name}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div className="bg-[#111122] border border-gray-800 rounded-xl p-5 hover:border-accent/30 transition-colors group">
-              <p className="text-[13px] text-gray-400 mb-3">Install via npm</p>
+              <p className="text-[13px] text-body-light mb-3">Install via npm</p>
               <code className="text-[14px] text-accent font-mono group-hover:text-white transition-colors">npm install @meetsync/sdk</code>
             </div>
           </div>

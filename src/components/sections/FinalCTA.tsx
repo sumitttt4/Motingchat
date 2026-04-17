@@ -8,7 +8,7 @@ export function FinalCTA() {
   return (
     <section ref={revealRef as React.RefObject<HTMLElement>} className="py-24 px-6">
       <div className="max-w-content mx-auto">
-        <div className="bg-dark rounded-3xl p-12 md:p-16 text-center relative overflow-hidden group">
+        <div className="bg-dark rounded-3xl p-8 md:p-16 text-center relative overflow-hidden group">
           {/* Animated glow orbs */}
           <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-accent/10 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/3 pointer-events-none animate-pulse-glow" />
           <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-accent/5 blur-[80px] rounded-full translate-y-1/2 -translate-x-1/3 pointer-events-none animate-pulse-glow" style={{ animationDelay: '2s' }} />
@@ -18,7 +18,7 @@ export function FinalCTA() {
             <h2 className="text-[40px] md:text-[52px] font-bold text-white leading-[1.1] tracking-tight mb-4">
               Your team will<br />thank you.
             </h2>
-            <p className="text-[17px] text-gray-400 leading-relaxed max-w-[420px] mx-auto mb-10">
+            <p className="text-[17px] text-body-light leading-relaxed max-w-[420px] mx-auto mb-10">
               Join 500+ teams who never miss an action item. Set up in 2 minutes. No credit card required.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">

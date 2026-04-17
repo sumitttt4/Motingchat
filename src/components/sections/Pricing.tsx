@@ -55,7 +55,6 @@ export function Pricing() {
             <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
             <span className="text-[11px] font-semibold uppercase tracking-[0.12em] text-accent">Pricing</span>
           </div>
-          <span className="text-[11px] font-medium text-gray-400 uppercase tracking-wider">08 / 08</span>
         </div>
 
         <h2 className="text-[40px] md:text-[48px] font-bold text-heading leading-[1.1] tracking-tight mb-4">

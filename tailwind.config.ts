@@ -16,6 +16,8 @@ const config: Config = {
         accent: "#2563eb",
         heading: "#0f0f0f",
         body: "#555555",
+        "body-subtle": "#8e8e93",
+        "body-light": "#a1a1aa",
         "border-subtle": "#e5e7eb",
       },
       fontFamily: {

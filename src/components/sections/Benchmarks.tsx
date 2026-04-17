@@ -2,6 +2,7 @@
 
 import { useReveal, useCountUp } from "@/hooks/useReveal";
 
+
 export function Benchmarks() {
   const revealRef = useReveal();
   const stat1 = useCountUp(30);
@@ -17,12 +18,13 @@ export function Benchmarks() {
             <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
             <span className="text-[11px] font-semibold uppercase tracking-[0.12em] text-accent">Benchmarks</span>
           </div>
-          <span className="text-[11px] font-medium text-gray-400 uppercase tracking-wider">03 / 08</span>
         </div>
 
         <h2 className="text-[40px] md:text-[48px] font-bold text-heading leading-[1.1] tracking-tight mb-16">
           Numbers don&apos;t lie.
         </h2>
+
+
 
         {/* Stats Row */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -41,8 +43,8 @@ export function Benchmarks() {
         </div>
 
         {/* Competitor Table */}
-        <div className="bg-card rounded-2xl border border-border-subtle overflow-hidden hover:shadow-lg transition-shadow">
-          <table className="w-full text-[14px]">
+        <div className="bg-card rounded-2xl border border-border-subtle overflow-x-auto hover:shadow-lg transition-shadow">
+          <table className="w-full text-[14px] min-w-[600px]">
             <thead>
               <tr className="border-b border-border-subtle bg-gray-50/50">
                 <th className="text-left py-4 px-6 font-semibold text-heading">Feature</th>

@@ -48,19 +48,32 @@ export function MatrixDivider() {
   }, []);
 
   return (
-    <div className="relative h-[120px] bg-dark overflow-hidden">
+    <div className="relative h-[240px] md:h-[320px] bg-dark overflow-hidden border-y border-white/5">
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
+      
+      {/* Animated Center Element */}
       <div className="absolute inset-0 flex items-center justify-center z-10">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 opacity-30" viewBox="0 0 512 512" fill="none">
-          <g transform="translate(92.5,45.1) scale(0.8)">
-            <path d="M256,192L320,224L320,288L256,320L192,288L192,224Z" fill="none" stroke="#2563eb" strokeWidth="16" strokeLinejoin="round" />
-            <path d="M352,192L416,224L416,288L352,320L320,288L320,224Z" fill="#2563eb" stroke="none" strokeLinejoin="round" opacity="0.8" />
-            <path d="M160,192L192,224L192,288L160,320L96,288L96,224Z" fill="none" stroke="#2563eb" strokeWidth="16" strokeLinejoin="round" />
-            <path d="M320,288L352,320L352,384L320,416L256,384L256,320Z" fill="none" stroke="#2563eb" strokeWidth="16" strokeLinejoin="round" />
-            <path d="M192,96L256,128L256,192L192,224L160,192L160,128Z" fill="none" stroke="#2563eb" strokeWidth="16" strokeLinejoin="round" />
-            <path d="M320,96L352,128L352,192L320,224L256,192L256,128Z" fill="#2563eb" stroke="none" strokeLinejoin="round" opacity="0.9" />
-          </g>
-        </svg>
+        <div className="relative flex items-center justify-center animate-float">
+          {/* Background Glow */}
+          <div className="absolute inset-0 bg-accent/20 blur-[60px] rounded-full animate-pulse-glow w-[150%] h-[150%] -left-[25%] -top-[25%]" />
+          
+          {/* Enlarged SVG Logo */}
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            className="h-28 w-28 md:h-40 md:w-40 opacity-70 drop-shadow-[0_0_15px_rgba(37,99,235,0.8)]" 
+            viewBox="0 0 512 512" 
+            fill="none"
+          >
+            <g transform="translate(92.5,45.1) scale(0.8)">
+              <path d="M256,192L320,224L320,288L256,320L192,288L192,224Z" fill="none" stroke="#2563eb" strokeWidth="16" strokeLinejoin="round" />
+              <path d="M352,192L416,224L416,288L352,320L320,288L320,224Z" fill="#2563eb" stroke="none" strokeLinejoin="round" opacity="0.8" />
+              <path d="M160,192L192,224L192,288L160,320L96,288L96,224Z" fill="none" stroke="#2563eb" strokeWidth="16" strokeLinejoin="round" />
+              <path d="M320,288L352,320L352,384L320,416L256,384L256,320Z" fill="none" stroke="#2563eb" strokeWidth="16" strokeLinejoin="round" />
+              <path d="M192,96L256,128L256,192L192,224L160,192L160,128Z" fill="none" stroke="#2563eb" strokeWidth="16" strokeLinejoin="round" />
+              <path d="M320,96L352,128L352,192L320,224L256,192L256,128Z" fill="#2563eb" stroke="none" strokeLinejoin="round" opacity="0.9" />
+            </g>
+          </svg>
+        </div>
       </div>
     </div>
   );

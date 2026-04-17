@@ -60,12 +60,12 @@ function TweetCard({ tweet }: { tweet: typeof tweets[0] }) {
             <p className="text-[12px] text-body mt-0.5">{tweet.handle}</p>
           </div>
         </div>
-        <svg className="w-4 h-4 text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        <svg className="w-4 h-4 text-body-subtle" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
       </div>
       <p className="text-[14px] text-heading leading-relaxed mb-3">{tweet.text}</p>
       <div className="flex items-center gap-2">
         <p className="text-[11px] text-body">{tweet.role}</p>
-        <span className="text-gray-300">&middot;</span>
+        <span className="text-border-subtle">&middot;</span>
         <p className="text-[11px] text-body">{tweet.date}</p>
       </div>
     </div>
@@ -87,7 +87,6 @@ export function SocialProof() {
             <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
             <span className="text-[11px] font-semibold uppercase tracking-[0.12em] text-accent">Social proof</span>
           </div>
-          <span className="text-[11px] font-medium text-gray-400 uppercase tracking-wider">07 / 08</span>
         </div>
 
         <h2 className="text-[40px] md:text-[48px] font-bold text-heading leading-[1.1] tracking-tight mb-16">
